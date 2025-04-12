@@ -33,7 +33,7 @@
   .cabecalho-menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6.25rem;
     justify-content: center;
   }
   
@@ -120,65 +120,53 @@
     min-height: 19.25rem;
     background-color: #000000;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-  }
-  
-  .rodape-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .rodape-titulo {
-    align-items: center;
-    flex: auto;
-    color: #ffffff;
-    font-size: 3rem;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .rodape-servicos {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    max-width: 56.2rem;
-    font-size: 1.8rem;
-  }
-  
-  .rodape-contatos {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    max-width: 56.2rem;
-    font-size: 1.8rem;
-  }
-  
-  .rodape-contatos-p4,
-  .rodape-contatos-p5,
-  .rodape-contatos-p6 {
+}
+
+.rodape-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .rodape-imagem {
+    gap: 2rem;
+}
+
+.rodape-titulo {
+    align-items: center;
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.rodape-servicos,
+.rodape-contatos {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.125rem;
+}
+
+.rodape-contatos-p4,
+.rodape-contatos-p5,
+.rodape-contatos-p6 {
+    gap: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape-imagem {
     width: 100%;
     max-width: 15rem;
     height: auto;
-  }
-  
-  .cabecalho-rodape-item {
+}
+
+.cabecalho-rodape-item {
     color: #ffffff;
-  }
+}
   
  
   @media (max-width: 768px) {
