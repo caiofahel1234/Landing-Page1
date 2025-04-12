@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de tênis streetwear personalizados. Modelos criativos, ousados e cheios de identidade pra quem vive o estilo urbano.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body class="pagina-inicio">
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="produtos.html" target="_blank">Produtos</a>
+            <a class="cabecalho-menu-item" href="sobre.html" target="_blank">Sobre</a>
+            <a class="cabecalho-menu-item" href="contato.html" target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-inicio">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Seu tênis com arte exclusiva, conforto garantido e estilo que ninguém copia — só na Dropkicks</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Você sabia que a <strong>DropKicks nunca repete um design</strong>? Cada par é pensado e criado à mão por artistas urbanos. Quer um tênis com sua história, estilo ou frase favorita? A gente faz acontecer.</h2>
+                <a class="conteudo-principal-escrito-botao" href="produtos.html" target="_blank">Quero ver os tênis</a>
+            </div>
+
+            <div class="carrossel">
+                <button onclick="mudarSlide(-1)">⟨</button>
+                <img id="imagem" src="imagem1.jpg" alt="Imagem do carrossel">
+                <button onclick="mudarSlide(1)">⟩</button>
+              </div>
+
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <section class="rodape-logo">
+            <h1 class="rodape-titulo">DropKicks</h1>
+            <img class="rodape-imagem"src="logo.png" alt="imagem do logo">
+        </section>
+
+        <section class="rodape-servicos">
+            <p class="rodape-p1">Institucional:</p>
+            <p class="rodape-p2">Serviços</p>
+            <a class="cabecalho-rodape-item" href="sobre.html" target="_blank">Sobre</a>
+            <a class="cabecalho-rodape-item"href="contato.html" target="_blank">Contato</a>
+        </section>
+
+        <section class="rodape-contatos">
+            <p class="rodape-p3">Entre em contato:</p>
+            <div class="rodape-contatos-p4">
+            <p class="rodape-p4">Instagram</p>
+            <img class="rodape-contatos-instagram" src="instagram.png" alt="logo do Instagram">
+            </div>
+            <div class="rodape-contatos-p5">
+            <p class="rodape-p5">Facebook</p>
+            <img class="rodape-contatos-facebook" src="facebook.png" alt="logo do Facebook">
+            </div>
+            <div class="rodape-contatos-p6">
+            <p class="rodape-p6">Whatsapp</p>
+            <img class="rodape-contatos-whatsapp" src="whatsapp.png" alt="logo do Whatsapp">
+            </div>
+        </section>
+
+    </footer>
+
+
+    <script>
+        const imagens = ["tenis5.jpg", "tenis6.png", "promocao.jpg"];
+        let indice = 0;
+      
+        function mudarSlide(direcao) {
+          indice = (indice + direcao + imagens.length) % imagens.length;
+          document.getElementById("imagem").src = imagens[indice];
+        }
+      </script>
+
+
+</body>
+</html>
